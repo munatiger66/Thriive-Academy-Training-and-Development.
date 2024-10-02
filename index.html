@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thriive Academy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Thriive Academy Training and Development</h1>
+    </header>
+
+    <section id="course-creation">
+        <h2>Course Creation</h2>
+        <form id="course-form">
+            <label for="course-title">Course Title:</label>
+            <input type="text" id="course-title" name="course-title">
+            
+            <label for="course-description">Course Description:</label>
+            <textarea id="course-description" name="course-description"></textarea>
+            
+            <label for="course-objectives">Course Objectives:</label>
+            <textarea id="course-objectives" name="course-objectives"></textarea>
+            
+            <button type="submit">Save Course</button>
+        </form>
+    </section>
+
+    <section id="assignment-upload">
+        <h2>Assignment Upload</h2>
+        <form id="assignment-form">
+            <label for="assignment-title">Assignment Title:</label>
+            <input type="text" id="assignment-title" name="assignment-title">
+
+            <label for="assignment-description">Assignment Description:</label>
+            <textarea id="assignment-description" name="assignment-description"></textarea>
+
+            <label for="assignment-file">Assignment File:</label>
+            <input type="file" id="assignment-file" name="assignment-file">
+
+            <label for="due-date">Due Date:</label>
+            <input type="date" id="due-date" name="due-date">
+
+            <button type="submit">Save Assignment</button>
+        </form>
+    </section>
+
+    <section id="progress-tracking">
+        <h2>Progress Tracking</h2>
+        <table id="student-progress">
+            <thead>
+                <tr>
+                    <th>Student</th>
+                    <th>Status</th>
+                    <th>Progress</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Populate with JavaScript -->
+            </tbody>
+        </table>
+        <button>Filter by Assignment Status</button>
+    </section>
+
+    <section id="marking-assignments">
+        <h2>Marking Assignments</h2>
+        <div>
+            <h3>Assignment Submission</h3>
+            <div id="submitted-assignment"></div>
+            <label for="grade-input">Grade:</label>
+            <input type="text" id="grade-input">
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback"></textarea>
+            <button>Save Grade</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
